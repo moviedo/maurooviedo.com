@@ -13,12 +13,10 @@
     "build": "brunch build --production"
   },
   "dependencies": {
-    "angular": "^1.0.0",
-    "angular-ui-router": "^0.2.18",
+    "vue": "^1.0.0",
     "bootswatch": "^3.0.0"
   },
   "devDependencies": {
-    "angularjs-templates-brunch": "^1.0.0",
     "auto-reload-brunch": "^2.0.0",
     "brunch": "^2.0.0",
     "chai": "^3.0.0",
