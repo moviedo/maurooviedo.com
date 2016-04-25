@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="mauro">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <base href="/"/>
     
     <!-- Stylesheets -->
-    <link type="stylesheet" href="javascripts/vendor.css"/>
-    <link type="stylesheet" href="javascripts/app.css"/>
+    <link rel="stylesheet" href="stylesheets/vendor.css"/>
+    <link rel="stylesheet" href="stylesheets/app.css"/>
     
-    <title>{{ $ctrl.title }}</title>
+    <title></title>
   </head>
   <body>
     
-    <div class="container-fluid">
+    <div class="container-fluid" id="mauro-app">
       <mauro-nav></mauro-nav>
       
       <div class="row">
-        <div class="col-xs-12" ui-view></div>
+        <div class="col-xs-12">
+        </div>
       </div>
     </div>
     
