@@ -11,11 +11,6 @@ module.exports = {
         'stylesheets/app.css': /^app/,
         'stylesheets/vendor.css': /^(?!app\/)/
       }
-    },
-    templates: {
-      joinTo: {
-        'javascripts/templates.js': /^app\//,
-      }
     }
   },
   
