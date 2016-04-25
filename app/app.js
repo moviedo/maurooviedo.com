@@ -1,14 +1,14 @@
 'use strict';
 
-var angular = require('angular'),
-    config = require('config');
-require('angular-ui-router')
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Nav from './components/nav';
 
-angular
-  .module('mauro', [
-    'ui.router',
-  ])
-  .config(config.location)
-  .config(config.routes);
+Vue.use(VueRouter);
 
-  
+new Vue({
+  el: '#mauro-app',
+  components: {
+    MauroNav: Nav
+  }
+})
