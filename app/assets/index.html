@@ -11,16 +11,15 @@
     <link rel="stylesheet" href="stylesheets/vendor.css"/>
     <link rel="stylesheet" href="stylesheets/app.css"/>
     
-    <title></title>
+    <title>{{ $route.name }}</title>
   </head>
   <body>
     
-    <div class="container-fluid" id="mauro-app">
+    <div id="app-container">
       <mauro-nav></mauro-nav>
       
-      <div class="row">
-        <div class="col-xs-12">
-        </div>
+      <div id="page-container">
+        <router-view></router-view>
       </div>
     </div>
     
