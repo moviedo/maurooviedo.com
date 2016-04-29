@@ -18,7 +18,7 @@
 </script>
 
 <template>
-  <header class="navbar navbar-default navbar-fixed-top">
+  <header role="navigation" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
     
       <div class="navbar-header">
@@ -39,17 +39,22 @@
       <nav class="collapse navbar-collapse"
             v-bind:class="{ 'in': isToggled }"
             aria-expanded="{{ isToggled.toString() }}">
+        
         <ul class="nav navbar-nav navbar-right">
-          <li class="active">
-            <a href="#">About</a>
+          <li v-bind:class="{'active': $route.name == 'blog' }">
+            <a v-link="{ name: 'blog' }">Blog</a>
           </li>
           
-          <li>
-            <a href="#">Contact</a>
+          <li v-bind:class="{'active': $route.name == 'about' }">
+            <a v-link="{ name: 'about' }">About</a>
           </li>
           
-          <li>
-            <a href="#">Reading</a>
+          <li v-bind:class="{'active': $route.name == 'reading' }">
+            <a v-link="{ name: 'reading' }">Reading</a>
+          </li>
+          
+          <li v-bind:class="{'active': $route.name == 'contact' }">
+            <a v-link="{ name: 'contact' }">Contact</a>
           </li>
         </ul>
       </nav>
