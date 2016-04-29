@@ -1,1 +1,1 @@
-Angular components.
+Application components.
