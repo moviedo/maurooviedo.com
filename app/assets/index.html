@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="stylesheets/vendor.css"/>
     <link rel="stylesheet" href="stylesheets/app.css"/>
     
-    <title>{{ $route.name }}</title>
+    <title>{{ getTitle($route.path) | capitalize }}</title>
   </head>
   <body>
     
