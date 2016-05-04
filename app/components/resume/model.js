@@ -184,22 +184,4 @@ export default {
     location: "New York, NY"
   },
   
-  interests: {
-    title: "Current Interests",
-    data: `
-    I'm currently learning <a href="elixir-lang.org">Elixir/Phoenix</a> and working with <a href="vuejs.org">Vue.js</a>.
-    <br/>
-    
-    <h3>My impressions of Vue.js so far.</h3>
-    <p>
-    It's very easy to pick up if you have a background in <a href="https://facebook.github.io/react/">React</a> or <a href="angularjs.org">Angular</a>. Essentially taking all the best aspects of angular and react but with a minimium api footprint. Also, <a href="brunch.io">Brunch</a> makes it very easy to work with.
-    </p>
-    
-    <h3>My impressions of Elixir.</h3>
-    <p>
-    I haven't finished learning Elixir basics just yet, but so far it's very enjoyable. Brings back memories of my college Programming Paradigm class. Very functional in a pretty wrapper is the best way to discribe it. Say what you will about functional programming, but it's gives you great tools for concurrent programming.
-    </p>
-    `
-  }
-  
 };

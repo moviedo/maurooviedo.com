@@ -23,13 +23,6 @@
       <p>{{{ statement.data }}}</p>
     </section>
     
-    <section>
-      <div class="page-header">
-        <h2>{{ interests.title }}</h2>
-      </div>
-      <p>{{{ interests.data }}}</p>
-    </section>
-    
     <mauro-exp :data.once="experience">
     </mauro-exp>
     
