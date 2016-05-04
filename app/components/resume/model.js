@@ -12,17 +12,17 @@ export default {
             details: [
               'Architected multi-demo deployment using Jenkins and Chef.',
               'Setup EC2 instances with Chef.',
-              'Automated demo configurations with <strong>python</strong> scripts.',
+              'Created automated configurations with <strong>python</strong> scripts.',
               'Setup git workflow for working with multiple client demos.',
             ]
           },
           {
             summary: 'Lead developer in charge of AWS dev ops.',
             details: [
-              'Maintained old infrastructure using **Puppet** for automation & deployment.',
-              'Migrated old infrastructure to **Chef** for automation & deployment.',
-              'Maintained old **Jenkins** scripts and created new scripts.',
-              'Deployed production features and resolved **python** related production issues.',
+              'Maintained old infrastructure using <strong>Puppet</strong> for automation & deployment.',
+              'Migrated old infrastructure to <strong>Chef</strong> for automation & deployment.',
+              'Maintained old <strong>Jenkins</strong> scripts and created new scripts.',
+              'Deployed production features and resolved <strong>python</strong> related production issues.',
             ]
           },
           {
@@ -31,7 +31,7 @@ export default {
               'Helped build and deploy search product, Scout.',
               'Helped rebuild and deploy insurance shopping product, Square.',
               'Updated and maintained other services that relied on <strong>django</strong> and/or <strong>flask</strong>.',
-              'Introduced standardized front-end workflow using **brunch**.'
+              'Introduced standardized front-end workflow using <strong>brunch</strong>.'
             ]
           },
           {
@@ -52,7 +52,7 @@ export default {
           {
             summary: 'Interacted with clients, developers, designers and project managers to meet client needs.',
             details: [
-              'Helped clients scope out projects and aticulate ideas into functional applications',
+              'Helped clients scope out projects and articulate ideas into functional applications',
               'Updated/migrated web properties from different platforms.'
             ]
           },
@@ -64,7 +64,7 @@ export default {
             ]
           },
           {
-            summary: 'Worked with Laravel Php framework, for server-side web development.',
+            summary: 'Worked with Laravel, Php framework, for server-side web development.',
             details: [
               'Build <strong>REST</strong>ful APIs for mobile application.',
               'Leveraged <strong>OAuth2</strong> library for mobile app authentication.'
@@ -80,6 +80,7 @@ export default {
           {
             summary: "Collaborated with lead developer to build online food ordering platform focused on food trucks.",
             details: [
+              "Leveraged <strong>django</strong> for server-side application.",
               'Leveraged <strong>backbone.js</strong> to build customer facing portion of application.',
               'Focused on using <strong>OpenLayers</strong> and <strong>Geodjango</strong> to create user interface for adding food truck locations and to display food delivery zones.'
             ]
@@ -99,7 +100,9 @@ export default {
           {
             summary: 'Added facebook integrating into platform.',
             details: [
-              'Created friend finding service using facebook graph api.'
+              "Integrated facebook login.",
+              "Created friend finding service using facebook graph api.",
+              "Used Ngrok to test facebook api integration."
             ]
           }
         ]
@@ -109,6 +112,20 @@ export default {
         company: "PublicStuff",
         location: "New York, NY",
         responsibilities: [
+          {
+            summary: 'Tasked with re-implementing features related to geographic data.',
+            details: [
+              'Worked with <strong>ArcGIS</strong> javascript library for data visualization.',
+              "Worked with <strong>Kohana</strong>, php web framework, to implement geographic data upload.",
+              "Worked with <strong>PostgreSQL</strong> to refactor tables."
+            ]
+          },
+          {
+            summary: 'Refactored JavaScript components.',
+            details: [
+              "Fixed implementation for different JavaScript components."
+            ]
+          },
         ]
       },
       {
@@ -116,6 +133,15 @@ export default {
         company: "Insticator",
         location: "New York, NY",
         responsibilities: [
+          {
+            summary: "Built out demo front-end for web application.",
+            details: [
+              "Used bootstrap for quick prototyping of components.",
+              "Used <strong>jQuery</strong> and <strong>jQuery UI</strong> for implementing front-end functionality.",
+              "Set up demo server using <strong>google app engine</strong>.",
+              "Implemented custom design using <strong>Less</strong>."
+            ]
+          },
         ]
       },
       {
@@ -123,6 +149,20 @@ export default {
         company: "VIP Art",
         location: "New York, NY",
         responsibilities: [
+          {
+            summary: "Implemented automated acceptance and unit testing.",
+            details: [
+              "Used <strong>Jasmine</strong> to create unit-test for JavaScript components.",
+              "Used <strong>Selenium</strong> to create acceptance testing.",
+            ]
+          },
+          {
+            summary: "Built information pages for web application.",
+            details: [
+              "Used <strong>Bootstrap</strong> for marking up HTML for different informational pages.",
+              "Worked with <strong>CodeIgniter</strong>, php web framework, to implement server side rendering of informational pages.",
+            ]
+          },
         ]
       }
     ]
