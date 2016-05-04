@@ -33,7 +33,7 @@
           <span class="icon-bar"></span>
         </button>
         
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand"  v-link="{ name: 'home' }">Home</a>
       </div>
 
       <nav class="collapse navbar-collapse"
@@ -41,10 +41,6 @@
             aria-expanded="{{ isToggled.toString() }}">
         
         <ul class="nav navbar-nav navbar-right">
-          <li v-bind:class="{'active': $route.name == 'blog' }">
-            <a v-link="{ name: 'blog' }">Blog</a>
-          </li>
-          
           <li v-bind:class="{'active': $route.name == 'about' }">
             <a v-link="{ name: 'about' }">About</a>
           </li>
