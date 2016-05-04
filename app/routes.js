@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from './components/home';
 import Blog from './components/blog';
 import About from './components/about';
 import Reading from './components/reading';
@@ -20,10 +19,6 @@ export default router;
 router.map({
   '/': {
     name: 'home',
-    component: Home
-  },
-  '/blog': {
-    name: 'blog',
     component: Blog
   },
   '/about': {
@@ -38,4 +33,8 @@ router.map({
     name: 'contact',
     component: Contact
   },
+  '/blog': {
+    name: 'blog',
+    component: Blog
+  }
 });
