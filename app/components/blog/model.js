@@ -58,12 +58,12 @@ posts = [
     token: "my-current-interests:-may-2016",
     date: "Wed May 04 2016",
     post: `
-    I'm currently learning <a href="elixir-lang.org">Elixir/Phoenix</a> and working with <a href="vuejs.org">Vue.js</a>.
+    I'm currently learning <a target="_blank" rel="noopener noreferrer" target="_blank" href="http://elixir-lang.org">Elixir/Phoenix</a> and working with <a rel="noopener noreferrer" target="_blank" href="https://vuejs.org">Vue.js</a>.
     <br/>
     
     <h3>My impressions of Vue.js so far.</h3>
     <p>
-    It's very easy to pick up if you have a background in <a href="https://facebook.github.io/react/">React</a> or <a href="angularjs.org">Angular</a>. Essentially taking all the best aspects of angular and react but with a minimium api footprint. Also, <a href="brunch.io">Brunch</a> makes it very easy to work with.
+    It's very easy to pick up if you have a background in <a target="_blank" rel="noopener noreferrer" href="https://facebook.github.io/react/">React</a> or <a target="_blank" rel="noopener noreferrer" href="https://angularjs.org">Angular</a>. Essentially taking all the best aspects of angular and react but with a minimium api footprint. Also, <a rel="noopener noreferrer" target="_blank" href="http://brunch.io">Brunch</a> makes it very easy to work with.
     </p>
     
     <h3>My impressions of Elixir.</h3>
