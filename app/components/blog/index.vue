@@ -45,7 +45,7 @@
             <ul class="list-group" v-show="query">
               <li class="list-group-item"
                   v-for="post in posts | filterBy query in 'title'">
-                <a href="#">
+                <a v-link="{ name: 'post', params: { blogToken: post.token } }">
                   {{ post.title }}
                 </a>
               </li>
@@ -59,10 +59,10 @@
         <h2>Latest Posts</h2>
         
         <ul class="list-group"
-            v-for="(key, post) in latestPosts">
+            v-for="post in latestPosts">
           
           <li class="list-group-item">
-            <a v-link="{ name: 'post', params: { blogToken: key } }">
+            <a v-link="{ name: 'post', params: { blogToken: post.token } }">
               {{ post.title }}
             </a>
             
