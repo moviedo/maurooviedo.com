@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Blog from './components/blog';
+import Post from './components/blog/post';
 import About from './components/about';
 import Reading from './components/reading';
 import Contact from './components/contact';
@@ -36,5 +37,9 @@ router.map({
   '/blog': {
     name: 'blog',
     component: Blog
-  }
+  },
+  '/blog/:blogToken': {
+    name: 'post',
+    component: Post
+  },
 });
