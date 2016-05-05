@@ -3,12 +3,13 @@ export default model;
 
 // porperties
 var posts,
-    postsHash = [],
+    postsHash = {},
     latest;
 
 // methods
 model.allPosts = () => { return posts };
 model.latestPosts = latestPosts;
+model.fromPostHash = fromPostHash;
 
 
 function latestPosts() {
@@ -17,7 +18,17 @@ function latestPosts() {
 }
 
 function sortAndLimit(posts) {
-  return posts.sort(byDate).slice(0,10);
+  let length  = posts.length;
+  
+  if (length == 0)
+    return posts
+  else if (length > 1)
+    return posts.sort(byDate).slice(0,10);
+  else {
+    add2Hash(posts[0]);
+    return posts;
+  }
+    
   
   function byDate(post1, post2) {
     var date1 = new Date(post1.date),
@@ -30,13 +41,21 @@ function sortAndLimit(posts) {
 }
 
 function add2Hash(post) {
-  if( !postsHash[post.title +':'+ post.date] )
-    postsHash[post.title +':'+ post.date] = post;
+  if( !postsHash[post.token] )
+    postsHash[post.token] = post;
+}
+
+function fromPostHash(token) {
+  if (!postsHash[token])
+    sortAndLimit(posts);
+    
+  return postsHash[token];
 }
 
 posts = [
   {
-    title: "My Current Interests",
+    title: "My Current Interests: May 2016",
+    token: "my-current-interests:-may-2016",
     date: "Wed May 04 2016",
     post: `
     I'm currently learning <a href="elixir-lang.org">Elixir/Phoenix</a> and working with <a href="vuejs.org">Vue.js</a>.
