@@ -49,7 +49,7 @@ function fromPostHash(token) {
   if (!postsHash[token])
     sortAndLimit(posts);
     
-  return postsHash[token];
+  return postsHash[token] || {};
 }
 
 posts = [
