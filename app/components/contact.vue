@@ -18,7 +18,7 @@
       <div class="panel panel-default">
         <div class="panel-body">
           <p class="col-md-12 col-lg-12 text-center">
-            I value my privacy on the modern net, but you can find me on the following sites below.
+            You can find me on the following sites below.
           </p>
         </div>
       </div>
