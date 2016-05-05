@@ -33,6 +33,10 @@ module.exports = {
   plugins: {
     autoReload: {
       port: 8080
+    },
+    babel: {
+      // fix for deoptimised babel error
+      compact: false
     }
   }
 }
