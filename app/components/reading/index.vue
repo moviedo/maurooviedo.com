@@ -55,7 +55,7 @@
                     effect="scale"
                     placement="top"
                     :content="item.description">
-                  <a target="_blank" href="{{ item.url }}">{{ item.name }}</a>
+                  <a target="_blank" rel="noopener noreferrer" href="{{ item.url }}">{{ item.name }}</a>
                   </tooltip>
                 </li>
               </ul>
