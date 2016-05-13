@@ -34,10 +34,6 @@ router.map({
     name: 'contact',
     component: Contact
   },
-  '/blog': {
-    name: 'blog',
-    component: Blog
-  },
   '/blog/:blogToken': {
     name: 'post',
     component: Post
