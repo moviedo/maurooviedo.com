@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="stylesheets/vendor.css"/>
     <link rel="stylesheet" href="stylesheets/app.css"/>
     
-    <title>{{ getTitle($route.path) | capitalize }}</title>
+    <title v-update-title="$route.path">Moviedo's Site</title>
   </head>
   <body>
     
