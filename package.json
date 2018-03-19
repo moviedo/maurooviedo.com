@@ -8,28 +8,26 @@
     "type": "git",
     "url": ""
   },
+  "engine": {
+    "node": ">==8.0.0",
+    "npm": ">==5.6.0"
+  },
   "scripts": {
     "start": "brunch watch --server",
-    "build": "brunch build --production"
+    "build": "rm -rf public && brunch b --production && yarn after-brunch",
+    "after-brunch": "node after-brunch.js"
   },
   "dependencies": {
-    "bootswatch": "^3.0.0",
-    "vue": "^1.0.0",
-    "vue-router": "^0.7.13",
-    "vue-strap": "^1.0.7"
+    "normalize.css": "8.0.0"
   },
   "devDependencies": {
-    "auto-reload-brunch": "^2.0.0",
-    "babel-brunch": "^6.0.2",
-    "brunch": "^2.0.0",
-    "chai": "^3.0.0",
-    "clean-css-brunch": "^2.0.0",
-    "css-brunch": "^2.0.0",
-    "javascript-brunch": "^2.0.0",
-    "mocha": "^2.0.0",
-    "sass-brunch": "^2.0.0",
-    "sinon": "^1.0.0",
-    "uglify-js-brunch": "^2.0.0",
-    "vue-brunch": "^1.0.0"
+    "auto-reload-brunch": "2.7.1",
+    "autoprefixer": "8.1.0",
+    "autoprefixer-brunch": "1.8.5",
+    "brunch": "2.10.12",
+    "clean-css-brunch": "2.10.0",
+    "gzip-brunch": "1.3.0",
+    "sass-brunch": "2.10.4",
+    "sveltejs-brunch": "0.0.5"
   }
 }

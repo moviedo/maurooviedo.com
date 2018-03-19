@@ -1,43 +1,48 @@
 module.exports = {
   files: {
     javascripts: {
-      joinTo: {
-        'javascripts/app.js': /^app\//,
-        'javascripts/vendor.js': /^(?!app\/)/
-      }
+      joinTo: 'javascripts/app.js'
     },
     stylesheets: {
       joinTo: {
         'stylesheets/app.css': /^app/,
         'stylesheets/vendor.css': /^(?!app\/)/
       }
+    },
+    templates: {
+      joinTo: 'javascripts/app.js'
     }
   },
-  
+
   npm: {
     styles: {
-      bootswatch: ['readable/bootstrap.css']
+      'normalize.css': ['normalize.css']
     }
   },
-  
-  server: {
-    port: 8000,
-    hostname: '0.0.0.0',
-    stripSlashes: true
+
+  overrides: {
+    production: {
+      plugins: {
+        autoReload: {
+          enabled: false
+        }
+      }
+    }
   },
-  
-  watcher: {
-    usePolling: true
-  },
-  
+
   plugins: {
-    autoReload: {
-      port: 8080
+    autoprefixer: {
+      browser: [
+        '> 5%',
+        'last 2 versions',
+        'safari >= 9',
+        'ie >= 10',
+        'ios >= 9',
+      ]
     },
-    babel: {
-      // fix for deoptimised babel error
-      compact: false
+    sveltejs: {
+      extractCSS: true,
+      out: './public/stylesheets/vendor.css',
     }
   }
 }
-    
