@@ -1,0 +1,74 @@
+<nav>
+  <a class="nav-link" href="#headerContent">Intro</a>
+  <a class="nav-link" href="#resumeSection">Resume</a>
+  <a class="nav-link"
+      href="https://github.com/moviedo"
+      target="_blank"
+      rel="noopener noreferrer">
+    Github
+  </a>
+
+  <button class="btn"
+          on:click='print()'
+          type="button"
+          name="print">
+    Print Resume
+  </button>
+</nav>
+
+<script>
+  export default {
+    methods: {
+      print() {
+        window.print();
+      }
+    }
+  };
+</script>
+
+<style>
+  nav {
+    background: #f7f7f9;
+    padding: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  @media screen and (max-width: 768px) {
+    nav {
+      padding: 20px;
+    }
+  }
+  @media print {
+    nav {
+      display: none;
+    }
+  }
+
+  a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 5px;
+  }
+  a:hover {
+    color: #0056b3;
+  }
+
+  button {
+    float: right;
+  }
+  .btn {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    display: inline-block;
+    font-weight: 400;
+    user-select: none;
+    padding: .375rem .75rem;
+    font-size: .8rem;
+    line-height: 1;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+</style>

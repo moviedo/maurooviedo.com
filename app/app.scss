@@ -1,10 +1,54 @@
+#appContainer {
+  font-family: TimesNewRoman;
 
-$font_color: #0fa383;
+  main {
+    margin: 80px 100px;
+    @media screen and (max-width: 768px) {
+      margin: 98px 20px 40px 20px;
+    }
+    @media print {
+      margin: 18mm;
+      h1 {
+        font-size: 22px;
+      }
+    }
 
-#page-container {
-  margin-top: 60px;
-}
-    
-h1, h2 {
-  color: $font_color !important;
+    h1 {
+      font-size: 32px;
+      color: #2e5898;
+    }
+
+
+    h2 {
+      font-size: 24px;
+      color: #2e5898;
+      margin: 0;
+      padding: 20px 0;
+
+      @media print {
+        display: none;
+      }
+    }
+
+    .h4Continer {
+      margin: 0;
+      line-height: 18px;
+      display: flex;
+      justify-content: space-between;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+      @media print {
+        flex-direction: row;
+      }
+    }
+
+    #headerContent::before, #resumeSection::before {
+      display: block;
+      margin-top: -66px;
+      height: 66px;
+      visibility: hidden;
+      content: "";
+    }
+  }
 }

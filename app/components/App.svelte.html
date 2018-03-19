@@ -1,0 +1,39 @@
+<Navigation></Navigation>
+
+<main>
+  <h1>
+    Mauro Oviedo<br/>
+    <small>New York, NY, United States</small>
+  </h1>
+
+  <CoverLetter></CoverLetter>
+  <Resume></Resume>
+</main>
+
+
+<style>
+  h1 {
+    font-size: 32px;
+    color: #2e5898;
+  }
+
+  h1 > small {
+    font-size: 68.75%;
+    color: black;
+    font-weight: normal;
+  }
+</style>
+
+<script>
+  import Navigation from './Navigation.svelte';
+  import CoverLetter from './CoverLetter.svelte';
+  import Resume from './Resume.svelte';
+
+  export default {
+    components: {
+      Navigation,
+      CoverLetter,
+      Resume
+    }
+  };
+</script>
